@@ -5,7 +5,7 @@ class QueueScreen extends Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Cola :x!</Text>
+        <Text>Cola!</Text>
       </View>
     );
   }

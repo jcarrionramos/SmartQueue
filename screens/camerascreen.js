@@ -13,16 +13,18 @@ import {
 import QRCodeScanner from 'react-native-qrcode-scanner';
 
 class ScanScreen extends Component {
-  onSuccess(e) {
-    Linking
-      .openURL(e.data)
-      .catch(err => console.error('An error occured', err));
+  onSuccess = (e) => {
+    alert(e.data)
+    this.props.navigation.navigate('Cola')
   }
 
   render() {
     return (
       <QRCodeScanner
-        onRead={this.onSuccess.bind(this)}
+        onRead={this.onSuccess}
+        reactive={true}
+        reactivateTimeout={500}
+        showMarker={true}
       />
     );
   }
