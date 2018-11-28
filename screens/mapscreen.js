@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 
-Mapbox.setAccessToken('pk.eyJ1IjoiamNhcnJpb25yYW1vcyIsImEiOiJjam8zNWxmbDQwdHJwM3FycHpwY200cTduIn0.soP_Xea8WPXBWyDb666_Fg');
+Mapbox.setAccessToken('pk.eyJ1IjoiamNhcnJpb25yYW1vcyIsImEiOiJjam8zNWpjaWowdHM3M3BxaTV6cmNvdXhpIn0.iVUeOvzSBlZWwJJzrH-78A');
 
 export default class Map extends Component {
   constructor(props){
@@ -46,7 +46,7 @@ export default class Map extends Component {
       <View style={styles.container}>
         <Mapbox.MapView
             styleURL={Mapbox.StyleURL.Street}
-            zoomLevel={15}
+            zoomLevel={13}
             centerCoordinate={[-70.6472400, -33.4726900]}
             ref={(c) => (this._map = c)}
             style={styles.container}
